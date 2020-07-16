@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Oxanium';
+  }
+body{
+    /*background-image: url("../images/bg.png");*/
+    background-color: #1d6e32;
+    width: 100%;
+    font-family: 'Oxanium';
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.container .subDivision{
+    width:100%;  font-family: 'Oxanium', ;
+    /*height:100%;*/
+    /*border:1px solid black*/
+}
+.leftDivisionUpper{
+    margin-top:100px;
+}
+.arrowDivisionOne{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.arrowImage{
+    background-color:#fff;
+    padding:10px;
+    margin:5px;
+}
+.leftDivisionDown{
+    border: 3px solid black;
+    width: 60%;
+    margin:auto;
+    margin-top:100px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.leftDivisionDown .arrowImage{
+    background-color:#fff;
+    width: 32px;
+    height: 32px;
+    padding:9px;
+    margin:6px;
+}
+/*right upper division*/
+.rightDivisionUpper{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:100px;
+}
+.rightDivisionUpper .arrowImage{
+    margin:20px;
+}
+.rightDivisionUpper .arrowImage #timmer{
+    margin: 0px;
+    padding: 0px;
+}
+.rightDivisionDown{
+    width: 30%;
+    margin:auto;
+    margin-top:110px;
+    /*border: 1px solid black;*/
+}
+.rightDivisionDown .buttonContainer .btn-Button{
+    padding:20px 10px 20px 10px;
+    width:100%;
+    color:black;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oxanium';
+}
+.rightDivisionDown .buttonContainer .second-botton{
+    margin-top:100px;
+}
+.middleDivision marquee{
+    background-color: #ccc;
+}
+.middleDivision h1{
+    text-align: center;
+    color:black
+}
+.middleDivision h2{
+    background-color: #fff;
+    color:#1d6e32;
+    margin-top:100px;
+    padding:10px;
+}
+.middleDivision h3{
+    background-color: #ccc;
+    color:black;
+    margin-top:-20px;
+    padding:10px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/memoryGame.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/arrows/info.png">
+    <title>Memory Game</title>
+    <style>
+        .leftDivisionDown .arrowImage img{
+            //display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="subDivision">
+        <div class="supSubDivision leftDivisionUpper">
+            <div class="arrowDivisionOne">
+                <div class="arrowImage"><img src="images/arrows/back.png"></div>
+                <div class="arrowImage"><img src="images/arrows/next.png"></div>
+                <div class="arrowImage"><img src="images/arrows/up-arrow.png"></div>
+                <div class="arrowImage"><img src="images/arrows/download.png"></div>
+            </div>
+            <div class="arrowDivisionOne">
+                <div class="arrowImage"><img src="images/arrows/diagonal-arrow-down.png"></div>
+                <div class="arrowImage"><img src="images/arrows/diagonal-arrow-up.png"></div>
+                <div class="arrowImage"><img src="images/arrows/move.png"></div>
+                <div class="arrowImage"><img src="images/arrows/double-arrow.png"></div>
+            </div>
+        </div>
+        <div class="supSubDivision leftDivisionDown">
+            <div class="arrowDivisionOne" id="generateImages">
+
+            </div>
+        </div>
+    </div>
+    <div class="subDivision middleDivision">
+        <h1><marquee behavior="alternate">Memory Game</marquee></h1>
+        <h2>Pairs found</h2>
+        <h3 id="totalPairs">0</h3>
+
+        <h2>Time</h2>
+        <h3 id='time'>0mins 0secs</h3>
+
+        <h2>Best score</h2>
+        <h3 id="bestScore">0</h3>
+    </div>
+    <div class="subDivision">
+        <div class="rightDivisionUpper">
+            <diV class="arrowImage"><img src="images/arrows/question.png"></diV>
+            <diV class="arrowImage"><button id="timer" onclick="setTimer();"><img src="images/arrows/icons8-timer-32.png"></button></diV>
+        </div>
+        <div class="rightDivisionDown">
+            <diV class="buttonContainer" id="newGameBtn" >
+                <button class="btn-Button first-button" onclick="startGame();">New Game</button>
+            </diV>
+            <diV class="buttonContainer">
+                <button class="btn-Button second-botton">Quit</button>
+            </diV>
+        </div>
+    </div>
+</div>
+<script src="js/memoryGame.js"></script>
+</body>
+</html>
